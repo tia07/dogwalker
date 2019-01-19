@@ -83,6 +83,7 @@ function initiateMap(){
  		navBar.classList.toggle('nav-active');
  		if(body.overflow == 'hidden'){
  			body.overflowY = 'auto';
+			body.overflowX = 'hidden';
 
 
 
