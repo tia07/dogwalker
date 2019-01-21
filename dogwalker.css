@@ -14,6 +14,7 @@ ul{
 	list-style: none;
 }
 body{
+	position:relative;
 	overflow-x: hidden !important;
 }
 h1{
