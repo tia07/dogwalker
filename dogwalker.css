@@ -58,6 +58,7 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	overflow-x: hidden !important;
 }
 
 ul li{
@@ -91,6 +92,7 @@ ul li:hover{
 	background-repeat: no-repeat;
 	color:black;
 	position: relative;
+	overflow-x: hidden !important;
 
 }
 #showcase-description{
