@@ -397,14 +397,11 @@ textarea{
 		position: absolute;
 		z-index: 1;
 		top: 12%;
-		width:25%;
+		width:0px;
 		height:90vh;
-		padding-left:30px;
-		padding-right:30px;
 		background: white;
 		opacity: .9;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
+		transition:0.3s;
 	
 
 		
@@ -435,11 +432,7 @@ textarea{
 }
 
 .nav-active{
-
-transform: translateX(0%);
-transition: transform .5s ease-in;
-
-	
+width:25%;
 }
 
 
