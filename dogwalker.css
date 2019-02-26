@@ -1,4 +1,3 @@
-
 *{
 	padding: 0px;
 	margin:0px;
@@ -6,16 +5,18 @@
 	color:#151515;
 	box-sizing:border-box;
 }
+body{
+	
+		overflow-x: hidden !important;
+
+		
+	}
 a{
 	text-decoration: none;
 	
 }
 ul{
 	list-style: none;
-}
-body{
-	
-	overflow-x: hidden !important;
 }
 h1{
 	font-size:2.8em;
@@ -59,7 +60,7 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	overflow-x: hidden !important;
+	overflow-x: hidden;
 }
 
 ul li{
@@ -93,7 +94,7 @@ ul li:hover{
 	background-repeat: no-repeat;
 	color:black;
 	position: relative;
-	overflow-x: hidden !important;
+	overflow-x: hidden;
 
 }
 #showcase-description{
@@ -368,6 +369,7 @@ textarea{
  }
 
 @media(max-width: 980px){
+
 	body{
 		overflow-x: hidden !important;
 
@@ -396,17 +398,16 @@ textarea{
 		flex-direction: column;
 		position: absolute;
 		z-index: 1;
+		width: 0px;
 		top: 12%;
-		width:0px;
+		
 		height:90vh;
+		transition: .3s;
 		background: white;
 		opacity: .9;
-		transition:0.3s;
-	
-
-		
 		
 	}
+	
 	.navigation li {
 		border-bottom: 1px solid #DDDDDD;
 		
@@ -432,10 +433,9 @@ textarea{
 }
 
 .nav-active{
-width:25%;
+width: 25%;
+
 }
-
-
 
 @media(max-width:850px){
 	#showcase-description{
@@ -514,10 +514,11 @@ width:25%;
 	.fa-quote-left{
 		font-size: 2.7em;
 	}
-	
 	.nav-active{
-	width:45%;
-	}
+	width: 50%;
+
+}
+	
 
 }
 @media(max-width: 375px){
@@ -547,25 +548,6 @@ width:25%;
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
