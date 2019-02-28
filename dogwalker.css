@@ -1,3 +1,4 @@
+
 *{
 	padding: 0px;
 	margin:0px;
@@ -6,11 +7,8 @@
 	box-sizing:border-box;
 }
 body{
-	
-		overflow-x: hidden !important;
-
-		
-	}
+	overflow: hidden;
+}
 a{
 	text-decoration: none;
 	
@@ -60,13 +58,6 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	overflow-x: hidden;
-
-}
-
-.navigation{
-	
-	min-width:5%;
 }
 
 ul li{
@@ -74,7 +65,7 @@ ul li{
 	padding:23px;
 	text-align: center;
 	height: 100%;
-	
+	transition: .2s;
 }
 ul li:hover{
 	
@@ -100,8 +91,7 @@ ul li:hover{
 	background-repeat: no-repeat;
 	color:black;
 	position: relative;
-	overflow-x: hidden;
-	overflow: hidden;
+	overflow:hidden;
 
 }
 #showcase-description{
@@ -351,7 +341,6 @@ textarea{
  }
 
 
-
  /*--------- MOBLE---------*/
 
  @media(max-width:1025px){
@@ -372,35 +361,16 @@ textarea{
 	width:32%;
 	
 
-	}
+}
 
  }
 
-
 @media(max-width: 980px){
-
 	body{
 		overflow-x: hidden !important;
 
 		
 	}
-	 .navigation{
-		display: flex;
-		min-width: 0%;
-		
-		right: 0px;
-		flex-direction: column;
-		position: absolute;
-		z-index: 1;
-		top: 12%;
-		height:90vh;
-		transition: .1s;
-		background: white;
-		opacity:0;
-
-	}
-
-	
 
 	
 	#burger-icon{
@@ -416,6 +386,33 @@ textarea{
 	ul li:hover{
 		background: none;
 
+	}
+
+	.navigation{
+		display: flex;
+		right: 0px;
+		flex-direction: column;
+		position: absolute;
+		z-index: 1;
+		top: 12%;
+		width:25%;
+		height:90vh;
+		padding-left:30px;
+		padding-right:30px;
+		background: white;
+		opacity: .9;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	
+
+		
+		
+	}
+	.navigation li {
+		border-bottom: 1px solid #DDDDDD;
+		
+		padding-bottom:35px;
+		padding-top:35px;
 	}
 
 	#aboutme-container, #services-wrap, .client-wrap{
@@ -434,11 +431,13 @@ textarea{
 
 
 }
- .nav-active{
-		min-width: 25%;
-		opacity: 1;
-		
-		
+
+.nav-active{
+
+transform: translateX(0%);
+transition: transform .5s ease-in;
+
+	
 }
 
 
@@ -520,11 +519,9 @@ textarea{
 	.fa-quote-left{
 		font-size: 2.7em;
 	}
-	.nav-active{
-	width: 50%;
-
-}
-	
+	.navigation{
+		width:50%;
+	}
 
 }
 @media(max-width: 375px){
@@ -554,3 +551,29 @@ textarea{
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
