@@ -1,4 +1,4 @@
-*{
+
 	padding: 0px;
 	margin:0px;
 	font-family: 'Noto Sans SC', sans-serif;
@@ -392,29 +392,6 @@ textarea{
 
 	}
 
-	.navigation{
-		display: flex;
-		right: 0px;
-		flex-direction: column;
-		position: absolute;
-		z-index: 1;
-		width: 0px;
-		top: 12%;
-		
-		height:90vh;
-		transition: .3s;
-		background: white;
-		opacity: .9;
-		
-	}
-	
-	.navigation li {
-		border-bottom: 1px solid #DDDDDD;
-		
-		padding-bottom:35px;
-		padding-top:35px;
-	}
-
 	#aboutme-container, #services-wrap, .client-wrap{
 	
 	width:90%;
@@ -434,6 +411,18 @@ textarea{
 
 .nav-active{
 width: 25%;
+display: flex;
+		right: 0px;
+		flex-direction: column;
+		position: absolute;
+		z-index: 1;
+		width: 0px;
+		top: 12%;
+		
+		height:90vh;
+		transition: .3s;
+		background: white;
+		opacity: .9;
 
 }
 
@@ -548,10 +537,3 @@ width: 25%;
 	}
 
 }
-
-
-
-
-
-
-
