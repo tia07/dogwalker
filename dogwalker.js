@@ -89,7 +89,9 @@ function initiateMap(){
 
  		}else{
  		
- 			body.overflow = 'hidden';
+ 			window.scrollTo(0,0);
+ 			body.overflowY = 'hidden';
+ 			body.overflowX = 'hidden';
 
  		}
 
