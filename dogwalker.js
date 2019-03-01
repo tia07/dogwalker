@@ -1,5 +1,7 @@
 
 
+
+
 // SLIDE CONTENT IN ON SCROLL
 function slidein(){
 	const pic = document.getElementById('aboutme-picture');
@@ -71,40 +73,38 @@ function initiateMap(){
 	});
 }
 
+function noscroll(){
+	window.scrollTo(0,0);
+}
+
 // BURGER MENUE
  const navSlide= function(){
  	const burger = document.querySelector('#burger-icon');
  	const navBar = document.querySelector('.navigation');
- 	let body = document.body.style;
+ 	const body = document.body.style;
 
  	burger.addEventListener('click',function(){
 
-
  		navBar.classList.toggle('nav-active');
+ 			
+ 		
  		if(body.overflow == 'hidden'){
+
+
  			body.overflowY = 'auto';
-			body.overflowX = 'hidden';
+ 			body.overflowX = 'hidden';
+
 
 
 
  		}else{
- 		
- 			window.scrollTo(0,0);
+ 			window.addEventListener('scroll',noscroll);
  			body.overflowY = 'hidden';
  			body.overflowX = 'hidden';
 
  		}
+ 		
 
  	});
  }
  navSlide();
-
-
-
-
-
-
-
-
-
-
