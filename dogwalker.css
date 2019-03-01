@@ -394,7 +394,7 @@ textarea{
 		z-index: 1;
 		top: 12%;
 		height:90vh;
-		transition: .1s;
+		transition: .2s;
 		background: white;
 		opacity: 0;
 		
