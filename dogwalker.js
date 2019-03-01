@@ -73,9 +73,7 @@ function initiateMap(){
 	});
 }
 
-function noscroll(){
-	window.scrollTo(0,0);
-}
+
 
 // BURGER MENUE
  const navSlide= function(){
@@ -98,7 +96,7 @@ function noscroll(){
 
 
  		}else{
- 			window.addEventListener('scroll',noscroll);
+ 			
  			body.overflowY = 'hidden';
  			body.overflowX = 'hidden';
 
